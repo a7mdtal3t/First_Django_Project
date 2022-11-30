@@ -11,3 +11,7 @@ def index(request):
     jsonResponse = response.json()
     articles = jsonResponse['articles']
     return render(request, 'blog/index.html', {'articles': articles})
+
+
+def about(request):
+    return render(request, 'blog/about.html')
